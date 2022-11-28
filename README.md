@@ -1,6 +1,8 @@
 
 # Testing HDF5 in R
 
+![](README_files/figure-gfm/unnamed-chunk-2-1.png)
+
 The package that I found can be used for HDF5 in R is rhdf5. It is a
 wrapper for the C library HDF5. The package is available on
 bioconductor,
@@ -191,8 +193,8 @@ autoplot(bm_df,type = "ridge") + theme_classic() +
 
     ## Loading required namespace: tidyr
 
-    ## Picking joint bandwidth of 0.0516
+    ## Picking joint bandwidth of 0.0258
 
 <img src="README_files/figure-gfm/unnamed-chunk-2-1.png" style="display: block; margin: auto;" />
 
-    ## Picking joint bandwidth of 0.0516
+    ## Picking joint bandwidth of 0.0258
