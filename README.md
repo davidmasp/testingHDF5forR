@@ -5,10 +5,20 @@ The package that I found can be used for HDF5 in R is rhdf5. It is a
 wrapper for the C library HDF5. The package is available on
 bioconductor,
 [here](https://www.bioconductor.org/packages/devel/bioc/vignettes/rhdf5/inst/doc/rhdf5.html).
+
 The idea is to try multiple ways to store the data, see how they
 compress the data against the baseline CSV format and how fast can you
-read from them. \## Conclusion The idea is that the rds if used accor
-\## Code
+read from them.
+
+## Conclusion
+
+The idea is that the rds is better in comrpession (by little), if used
+accordingly. It’s not obvious how to use accordingly though.
+
+The hdf5 however seems to be faster to read however there is a weird way
+to do so.
+
+## Code
 
 ``` r
 set.seed(42)
@@ -181,8 +191,8 @@ autoplot(bm_df,type = "ridge") + theme_classic() +
 
     ## Loading required namespace: tidyr
 
-    ## Picking joint bandwidth of 0.0321
+    ## Picking joint bandwidth of 0.0516
 
 <img src="README_files/figure-gfm/unnamed-chunk-2-1.png" style="display: block; margin: auto;" />
 
-    ## Picking joint bandwidth of 0.0321
+    ## Picking joint bandwidth of 0.0516
